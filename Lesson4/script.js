@@ -1,4 +1,4 @@
-var vt = 0;
+var v = 0;
 function main() {
    var socket = io();
    var chatDiv = document.getElementById('chat');
