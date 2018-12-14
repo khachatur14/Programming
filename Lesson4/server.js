@@ -19,7 +19,7 @@ io.on('connection', function (socket) {
        io.sockets.emit("display message", data);
    });
    socket.on("remove message", function (data) {
-       messages.splice(0,1);
+       messages.splice(messages.length-1,1);
        io.sockets.emit("display message", data);
    });
 });
